@@ -1,0 +1,1 @@
+F=(a)=>{R="1";for(I=a;I--;)R=m(R,I+1+"");return R}
