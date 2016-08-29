@@ -1,0 +1,1 @@
+e=(a,b)=>{g="1";for(x=b;x--;)g=m(""+a,g);return g}
