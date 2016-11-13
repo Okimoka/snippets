@@ -1,5 +1,5 @@
 # snippets
-Some golfed js snippets which help doing calculations with big positive integer numbers. The faculty snippet and the exponent one both require multiply.
+Some golfed js snippets which help doing calculations with big positive integer numbers. The factorial snippet and the exponent one both require multiply.
 
 #Examples:
 ####m("9872534758234523765492501698435963846531764317623765437697504365172639154","1234698010250672435796917204156749313706517293714663858")
