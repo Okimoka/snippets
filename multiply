@@ -1,5 +1,5 @@
 m=(a,b)=>{f="length";n="";r=[];v=a[f];w=b[f];for(i=0;i<w*v;i++)p=""+b[i/v|0]*a[i%v],2>p[f]&&(p="0"+p),n+=p;r=Array(v+w).fill(0);for(i=0;i<2*v*w;i++)r[0|i/(2*v)+(.5+i%(2*v)/2|0)]+=+n[i];for(j=w+v;j--;)r[j-1]+=0|r[j]/10,r[j]%=10;r[0]||r.shift();return r.join("")}
 m=([...a],[...b],x=[])=>eval("for(a.map((g,i)=>b.map((h,j)=>{x[O=j+i]=~~x[O++]+g*h/10|0,x[O]=~~x[O]+g*h%10}));O--;x[O-1]+=0|x[O]/10,x[O]%=10)x.join``")
 a=>b=>eval("x=[];for(g in a){for(h in b)O=+g+ +h-10"+(P="/10|0,x[++O]=~~x[O]+a[g]*b[h]")+P+"%10}for(;O--;x[O-1]+=0|x[O]/10,x[O]%=10)x.join``")
-a=>b=>eval("x=[];for(g in a){for(h in b)O=+g+ +h,x[O]=a[g]*b[h]+(O<x.length&&x[O])}for(;O--;x[O]+=0|x[O+1]/10,x[O+1]%=10);x.join``")
+a=>b=>eval("x=[];for(g in a){for(h in b)x[O=+g+ +h]=a[g]*b[h]+(O<x.length&&x[O])}for(;O--;x[O++]+=0|x[O]/10,x[O--]%=10);x.join``")
 //for speed remove eval and add return
