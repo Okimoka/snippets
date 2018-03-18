@@ -2,7 +2,7 @@ m=(a,b)=>{f="length";n="";r=[];v=a[f];w=b[f];for(i=0;i<w*v;i++)p=""+b[i/v|0]*a[i
 m=([...a],[...b],x=[])=>eval("for(a.map((g,i)=>b.map((h,j)=>{x[O=j+i]=~~x[O++]+g*h/10|0,x[O]=~~x[O]+g*h%10}));O--;x[O-1]+=0|x[O]/10,x[O]%=10)x.join``")
 a=>b=>eval("x=[];for(g in a){for(h in b)O=+g+ +h-10"+(P="/10|0,x[++O]=~~x[O]+a[g]*b[h]")+P+"%10}for(;O--;x[O-1]+=0|x[O]/10,x[O]%=10)x.join``")
 a=>b=>eval("x=[];for(g in a){for(h in b)x[O=+g+ +h]=a[g]*b[h]+~~x[O]}for(;O--;x[O++]+=0|x[O]/10,x[O--]%=10);x.join``")
-a=>b=>eval("for(x=g=n=[],g=a.length;h--||(h=b.length,g--);x[O=g+h]=(n=~~x[O]+n/10+~~b[h-1]*a[g]|0)%10);x.join``")
+a=>b=>eval("for(x=h=n=[],g=a.length;h--||(h=b.length,g--);x[O=g+h]=(n=~~x[O]+n/10+~~b[h-1]*a[g]|0)%10);x.join``")
 
 //credit to https://codegolf.stackexchange.com/users/3428/copy for the last one
 //for speed remove eval and add return
