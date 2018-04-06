@@ -1,2 +1,3 @@
 e=(a,b)=>{g="1";for(x=b;x--;)g=m(""+a,g);return g}
 e=(a,b)=>--b?m(""+a,e(""+a,b)):a
+doesn't work for b==0. m has to be declared as named function
